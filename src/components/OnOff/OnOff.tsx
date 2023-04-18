@@ -24,7 +24,7 @@ export const OnOff = (props: PropsType) => {
         marginLeft: "2px",
         padding: "2px",
         backgroundColor: "green"
-    }};
+    };
 
     const indicatorStyle = {
         width: "10px",
