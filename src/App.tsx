@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Accordion} from './components/Accordion/Accordion';
 import {Rating} from './components/Rating/Rating';
+import OnOff from './components/OnOff/OnOff';
 
 //function declaration
 function App(props: any) {
@@ -10,14 +11,15 @@ function App(props: any) {
     //обязана вернуть JSX
     return (
         <div className="App">
+            <OnOff on={true}/>
             {/*<PageTitle title={"This is APP component"}/>*/}
-            <Accordion titleValue={"Menu"} collapsed={true}/>
-            <Accordion titleValue={"Users"} collapsed={true}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>
+        {/*    <Accordion titleValue={"Menu"} collapsed={true}/>*/}
+        {/*    <Accordion titleValue={"Users"} collapsed={true}/>*/}
+        {/*    <Rating value={1}/>*/}
+        {/*    <Rating value={2}/>*/}
+        {/*    <Rating value={3}/>*/}
+        {/*    <Rating value={4}/>*/}
+        {/*    <Rating value={5}/>*/}
         </div>
     );
 }
