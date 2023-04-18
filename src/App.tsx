@@ -3,6 +3,7 @@ import './App.css';
 import {Accordion} from './components/Accordion/Accordion';
 import {Rating} from './components/Rating/Rating';
 import OnOff from './components/OnOff/OnOff';
+import {UncontrolledAccordion} from './components/Accordion/UncontrolledAccordion';
 
 //function declaration
 function App(props: any) {
@@ -14,6 +15,8 @@ function App(props: any) {
             <OnOff/>
             <OnOff/>
             <OnOff/>
+            <UncontrolledAccordion titleValue={'MENU'}/>
+            <UncontrolledAccordion titleValue={'users'}/>
             {/*<PageTitle title={"This is APP component"}/>*/}
         {/*    <Accordion titleValue={"Menu"} collapsed={true}/>*/}
         {/*    <Accordion titleValue={"Users"} collapsed={true}/>*/}
