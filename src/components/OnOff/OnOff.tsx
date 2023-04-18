@@ -22,7 +22,7 @@ export const OnOff = (props: PropsType) => {
         display: "inline-block",
         marginLeft: "2px",
         padding: "2px",
-        backgroundColor: on ? "red" : "white"
+        backgroundColor: on ? "white" : "red"
 
 };
 
@@ -34,7 +34,7 @@ export const OnOff = (props: PropsType) => {
         display: "inline-block",
         marginLeft: "5px",
         padding: "2px",
-        backgroundColor: on ? "red" : "white"
+        backgroundColor: on ? "green" : "red"
     };
 
 

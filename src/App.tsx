@@ -12,6 +12,8 @@ function App(props: any) {
     return (
         <div className="App">
             <OnOff/>
+            <OnOff/>
+            <OnOff/>
             {/*<PageTitle title={"This is APP component"}/>*/}
         {/*    <Accordion titleValue={"Menu"} collapsed={true}/>*/}
         {/*    <Accordion titleValue={"Users"} collapsed={true}/>*/}
