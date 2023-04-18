@@ -4,8 +4,6 @@ type PropsType = {
     on: boolean
 }
 
-
-
 export const OnOff = (props: PropsType) => {
 
     const onStyle = {
@@ -14,7 +12,7 @@ export const OnOff = (props: PropsType) => {
         border: "1px solid black",
         display: "inline-block",
         padding: "2px",
-        backgroundColor: "green"
+        backgroundColor: props.on? "green" : "white"
     }
     const offStyle = {
         width: "30px",
@@ -23,14 +21,18 @@ export const OnOff = (props: PropsType) => {
         display: "inline-block",
         marginLeft: "2px",
         padding: "2px",
-        backgroundColor: "green"
+        backgroundColor: props.on? "white" : "red"
     };
 
     const indicatorStyle = {
         width: "10px",
         height: "10px",
         borderRadius: "5px",
-        border: "1px solid black"
+        border: "1px solid black",
+        display: "inline-block",
+        marginLeft: "5px",
+        padding: "2px",
+        backgroundColor: props.on? "green" : "red"
     };
 
 
@@ -38,7 +40,7 @@ export const OnOff = (props: PropsType) => {
         <div>
             <div style={onStyle}>On</div>
             <div style={offStyle}>Off</div>
-            <div></div>
+            <div style={indicatorStyle}></div>
         </div>
     );
 };
